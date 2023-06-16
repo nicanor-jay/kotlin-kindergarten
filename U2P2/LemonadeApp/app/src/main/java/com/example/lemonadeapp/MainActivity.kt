@@ -83,6 +83,7 @@ fun LemonadeImgAndText(
             Spacer(modifier = Modifier.height(16.dp))
             Text(
                 text = stringResource(textResource),
+                color = Color.Black
             )
         }
     }
@@ -104,7 +105,8 @@ fun LemonadeApp() {
                 title = {
                     Text(
                         text = "Lemonade",
-                        fontWeight = FontWeight.Bold
+                        fontWeight = FontWeight.Bold,
+                        color = Color.Black
                     )
                 },
                 colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
@@ -116,8 +118,8 @@ fun LemonadeApp() {
         Surface(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(innerPadding)
-                .background(MaterialTheme.colorScheme.tertiaryContainer),
+                .padding(innerPadding),
+            color = Color.White
         ) {
             when (currSlide) {
                 1 -> {
